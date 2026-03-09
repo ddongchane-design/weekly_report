@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>[웰컴에프앤디] 주간 금리 동향 - 2026년 03월 09일</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Noto Sans KR', 'Malgun Gothic', '맑은 고딕', sans-serif;
+    background: #F5F7FB;
+    color: #1E293B;
+    padding: 0;
+  }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 32px 20px; }
+  table tr:hover td { background: #F8FAFC; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- ── 헤더 ── -->
+  <div style="background:linear-gradient(135deg,#2764EB,#4F46E5);
+              border-radius:20px;padding:36px 40px;color:#fff;
+              margin-bottom:32px;box-shadow:0 8px 32px rgba(39,100,235,0.25)">
+    <div style="font-size:13px;background:rgba(255,255,255,0.18);
+                display:inline-block;padding:4px 14px;border-radius:20px;
+                margin-bottom:14px;letter-spacing:0.5px">
+      📅 2026년 03월 09일 기준
+    </div>
+    <h1 style="font-size:28px;font-weight:700;line-height:1.3;margin-bottom:8px">
+      주간 금리 동향
+    </h1>
+    <p style="font-size:14px;opacity:0.85;margin:0">
+      웰컴에프앤디(주) 자금팀
+    </p>
+  </div>
+
+  <!-- ── 요약 배너 ── -->
+  <div style="background:#fff;border-radius:14px;padding:18px 24px;
+              margin-bottom:28px;border:1px solid #E2E8F0;
+              box-shadow:0 2px 8px rgba(0,0,0,0.04)">
+    <p style="font-size:13px;color:#64748B;margin-bottom:4px">📌 이 보고서는 주요 금리 지표의 최근 동향을 요약한 자료입니다.</p>
+    <p style="font-size:13px;color:#64748B">수치는 <b>전기(전월) 대비</b> 변동폭(bp, basis point)으로 표시됩니다. (1bp = 0.01%)</p>
+  </div>
+
+  <!-- ── 주간 이슈 ── -->
+  
+    <div style="background:#fff;border-radius:16px;padding:24px 28px;margin-bottom:24px;
+                box-shadow:0 2px 12px rgba(0,0,0,0.06);border:1px solid #E8EEF8">
+      <div style="display:flex;align-items:center;margin-bottom:18px;gap:10px">
+        <span style="font-size:22px">📰</span>
+        <h2 style="margin:0;font-size:17px;font-weight:700;color:#1E293B">주간 주요 이슈</h2>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px">
+        
+        <div style="background:#ECFEFF;border-radius:12px;padding:16px 20px;
+                    border-left:4px solid #06B6D4;">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
+            <span style="font-size:16px">🌏</span>
+            <span style="font-size:11px;font-weight:700;color:#06B6D4;
+                         background:white;padding:2px 10px;border-radius:20px;
+                         border:1px solid #06B6D4;">해외</span>
+            <span style="font-size:14px;font-weight:700;color:#1E293B">미·이란 전쟁 확전 & 유가 급등</span>
+          </div>
+          <p style="font-size:13px;color:#475569;margin:0;line-height:1.6;padding-left:2px">2월 28일 미국·이스라엘의 이란 합동 공습으로 하메네이 최고지도자 사망이 확인되었고, 이란이 걸프 지역 미군 기지에 보복 미사일을 발사하며 전면 충돌로 확산. 이란의 호르무즈 해협 봉쇄 위협에 WTI 원유가 주간 기준 역대 최대폭(+35.6%) 급등하며 글로벌 금융시장 전반에 리스크 오프(Risk-Off) 국면 형성. 금·달러 동반 강세, 주요 증시 급락.</p>
+        </div>
+        <div style="background:#F5F3FF;border-radius:12px;padding:16px 20px;
+                    border-left:4px solid #8B5CF6;">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
+            <span style="font-size:16px">📊</span>
+            <span style="font-size:11px;font-weight:700;color:#8B5CF6;
+                         background:white;padding:2px 10px;border-radius:20px;
+                         border:1px solid #8B5CF6;">시장</span>
+            <span style="font-size:14px;font-weight:700;color:#1E293B">국채금리 급등 — 이란 충격·인플레 재평가</span>
+          </div>
+          <p style="font-size:13px;color:#475569;margin:0;line-height:1.6;padding-left:2px">이란發 유가 쇼크로 인플레이션 경로 재평가가 진행되면서 국고채 3년물 금리가 전주 대비 10bp 이상 올라 3.31% 안팎까지 상승, 10년물·30년물도 8~9bp 동반 상승. 미국 10년물 국채 금리 역시 4.05%를 돌파하며 연준의 금리 인하 기대가 후퇴. 전쟁 장기화·유가 80달러 상회 시 금리 상단이 한 단계 더 높아질 가능성 경계.</p>
+        </div>
+        <div style="background:#ECFDF5;border-radius:12px;padding:16px 20px;
+                    border-left:4px solid #10B981;">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
+            <span style="font-size:16px">📈</span>
+            <span style="font-size:11px;font-weight:700;color:#10B981;
+                         background:white;padding:2px 10px;border-radius:20px;
+                         border:1px solid #10B981;">금융</span>
+            <span style="font-size:14px;font-weight:700;color:#1E293B">여전채 크레딧 스프레드 확대 압력</span>
+          </div>
+          <p style="font-size:13px;color:#475569;margin:0;line-height:1.6;padding-left:2px">중동 리스크 확대와 국채금리 급등으로 여전채(여신전문금융채) 신용스프레드가 확대 압력을 받고 있음. 2025년 연간 여전채 발행 규모는 95.5조 원으로 전년 대비 약 5% 감소. 크레딧 스프레드(AA- 기준)는 3분기 44bp대에서 연말 53.5bp까지 벌어진 상태로, 이란 사태가 추가 확대 요인으로 부각.</p>
+        </div>
+        <div style="background:#EFF6FF;border-radius:12px;padding:16px 20px;
+                    border-left:4px solid #2764EB;">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
+            <span style="font-size:16px">🏛</span>
+            <span style="font-size:11px;font-weight:700;color:#2764EB;
+                         background:white;padding:2px 10px;border-radius:20px;
+                         border:1px solid #2764EB;">경제</span>
+            <span style="font-size:14px;font-weight:700;color:#1E293B">저축은행 수신금리 인상 — 머니무브 방어·유동성 관리 목적</span>
+          </div>
+          <p style="font-size:13px;color:#475569;margin:0;line-height:1.6;padding-left:2px">증시 호황에 따른 머니무브(자금 이탈) 가속화로 수신 잔액이 줄어들자, 저축은행들이 선제적 방어 차원에서 예금·파킹통장 금리를 일제히 인상. 대출 정체 속 유동성·예대율 관리 부담이 커진 점도 방어적 금리 인상의 배경. 3~4월 공모주 청약 시즌 단기 대기 자금 유치를 위해 파킹통장 금리와 한도를 공격적으로 확대하는 양상. 향후 증시 변동성 확대 시 대기성 자금 선점 경쟁이 더욱 심화될 전망.</p>
+        </div>
+      </div>
+    </div>
+
+  <!-- ── 섹션들 ── -->
+  
+    <div style="background:#fff;border-radius:16px;padding:24px 28px;margin-bottom:24px;
+                box-shadow:0 2px 12px rgba(0,0,0,0.06);border:1px solid #E8EEF8">
+
+      <!-- 섹션 헤더 -->
+      <div style="display:flex;align-items:center;margin-bottom:16px;gap:10px">
+        <span style="font-size:22px">🏦</span>
+        <h2 style="margin:0;font-size:17px;font-weight:700;color:#1E293B">중앙은행 기준금리</h2>
+      </div>
+
+      <!-- 트렌드 코멘트 -->
+      <div style="background:#F0F5FF;border-left:4px solid #2764EB;
+                  padding:10px 16px;border-radius:0 8px 8px 0;
+                  font-size:13.5px;color:#334155;margin-bottom:18px;line-height:1.6">
+        💡 <b>한국 (BOK), 미국 (Fed)</b> 보합 (전기 대비)
+      </div>
+
+      <!-- 데이터 테이블 -->
+      <div style="overflow-x:auto">
+        <table style="width:100%;border-collapse:collapse;font-size:14px">
+          <thead>
+            <tr style="background:#F1F5F9">
+              <th style="padding:10px 14px;text-align:left;color:#64748B;font-weight:600;border-radius:8px 0 0 8px">항목</th>
+              <th style="padding:10px 14px;text-align:right;color:#64748B;font-weight:600">2026년 03월 06일</th>
+              <th style="padding:10px 14px;text-align:right;color:#64748B;font-weight:600">2026년 02월</th>
+              <th style="padding:10px 14px;text-align:right;color:#64748B;font-weight:600;border-radius:0 8px 8px 0">변동</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+        <tr>
+          <td style="padding:10px 14px;font-weight:600;color:#334155;white-space:nowrap">한국 (BOK)</td>
+          <td style="padding:10px 14px;text-align:right;font-family:monospace;font-size:15px;color:#1E293B;font-weight:700">2.50%</td>
+          <td style="padding:10px 14px;text-align:right;font-family:monospace;color:#64748B">2.50%</td>
+          <td style="padding:10px 14px;text-align:right"><span style="color:#64748B;font-weight:bold">→ 0.0bp</span></td>
+        </tr>
+        <tr>
+          <td style="padding:10px 14px;font-weight:600;color:#334155;white-space:nowrap">미국 (Fed)</td>
+          <td style="padding:10px 14px;text-align:right;font-family:monospace;font-size:15px;color:#1E293B;font-weight:700">3.75%</td>
+          <td style="padding:10px 14px;text-align:right;font-family:monospace;color:#64748B">3.75%</td>
+          <td style="padding:10px 14px;text-align:right"><span style="color:#64748B;font-weight:bold">→ 0.0bp</span></td>
+        </tr>
+        <tr>
+          <td style="padding:10px 14px;font-weight:600;color:#334155;white-space:nowrap">유럽 (ECB)</td>
+          <td style="padding:10px 14px;text-align:right;font-family:monospace;font-size:15px;color:#1E293B;font-weight:700">2.15%</td>
+          <td style="padding:10px 14px;text-align:right;font-family:monospace;color:#64748B">2.15%</td>
+          <td style="padding:10px 14px;text-align:right"><span style="color:#64748B;font-weight:bold">→ 0.0bp</span></td>
+        </tr>
+        <tr>
+          <td style="padding:10px 14px;font-weight:600;color:#334155;white-space:nowrap">일본 (BOJ)</td>
+          <td style="padding:10px 14px;text-align:right;font-family:monospace;font-size:15px;color:#1E293B;font-weight:700">0.75%</td>
+          <td style="padding:10px 14px;text-align:right;font-family:monospace;color:#64748B">0.75%</td>
+          <td style="padding:10px 14px;text-align:right"><span style="color:#64748B;font-weight:bold">→ 0.0bp</span></td>
+        </tr>
+        <tr>
+          <td style="padding:10px 14px;font-weight:600;color:#334155;white-space:nowrap">중국 (PBOC)</td>
+          <td style="padding:10px 14px;text-align:right;font-family:monospace;font-size:15px;color:#1E293B;font-weight:700">3.00%</td>
+          <td style="padding:10px 14px;text-align:right;font-family:monospace;color:#64748B">3.00%</td>
+          <td style="padding:10px 14px;text-align:right"><span style="color:#64748B;font-weight:bold">→ 0.0bp</span></td>
+        </tr>
+          </tbody>
+        </table>
+      </div>
+
+      
+    <div style="margin-top:20px;border-top:1px solid #E2E8F0;padding-top:16px">
+      <div style="font-size:12px;color:#94A3B8;margin-bottom:12px">📈 추이 (최근 12개월)</div>
+      <div style="position:relative;height:240px">
+        <canvas id="chart_1"></canvas>
+      </div>
+    </div>
+    <script>
+    (function() {
+      var ctx = document.getElementById('chart_1').getContext('2d');
+      new Chart(ctx, {
+        type: 'line',
+        data: {"labels": ["25.04", "25.05", "25.06", "25.07", "25.08", "25.09", "25.10", "25.11", "25.12", "26.01", "26.02", "26.03.06"], "datasets": [{"label": "한국 (BOK)", "data": [2.75, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5], "borderColor": "#2764EB", "backgroundColor": "rgba(39,100,235,0.08)", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 7, "pointBackgroundColor": "#2764EB", "tension": 0.3, "fill": false}, {"label": "미국 (Fed)", "data": [4.5, 4.5, 4.5, 4.5, 4.5, 4.25, 4.0, 4.0, 3.75, 3.75, 3.75, 3.75], "borderColor": "#10B981", "backgroundColor": "rgba(16,185,129,0.08)", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 7, "pointBackgroundColor": "#10B981", "tension": 0.3, "fill": false}, {"label": "유럽 (ECB)", "data": [2.4, 2.4, 2.15, 2.15, 2.15, 2.15, 2.15, 2.15, 2.15, 2.15, 2.15, 2.15], "borderColor": "#F59E0B", "backgroundColor": "rgba(245,158,11,0.08)", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 7, "pointBackgroundColor": "#F59E0B", "tension": 0.3, "fill": false}, {"label": "일본 (BOJ)", "data": [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.75, 0.75, 0.75, 0.75], "borderColor": "#EF4444", "backgroundColor": "rgba(239,68,68,0.08)", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 7, "pointBackgroundColor": "#EF4444", "tension": 0.3, "fill": false}, {"label": "중국 (PBOC)", "data": [3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0], "borderColor": "#8B5CF6", "backgroundColor": "rgba(139,92,246,0.08)", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 7, "pointBackgroundColor": "#8B5CF6", "tension": 0.3, "fill": false}]},
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          interaction: { mode: 'index', intersect: false },
+          plugins: {
+            legend: {
+              position: 'bottom',
+              labels: {
+                font: { size: 12 },
+                color: '#334155',
+                usePointStyle: true,
+                padding: 16,
+              }
+            },
+            tooltip: {
+              backgroundColor: 'rgba(15,23,42,0.85)',
+              titleColor: '#94A3B8',
+              bodyColor: '#F1F5F9',
+              padding: 12,
+              cornerRadius: 8,
+              callbacks: {
+                label: function(ctx) {
+                  return ' ' + ctx.dataset.label + ': ' + ctx.parsed.y.toFixed(2) + '%';
+                }
+              }
+            }
+          },
+          scales: {
+            x: {
+              grid: { display: false },
+              ticks: { color: '#64748B', font: { size: 11 } }
+            },
+            y: {
+              grid: { color: '#E2E8F0', lineWidth: 1 },
+              ticks: {
+                color: '#64748B',
+                font: { size: 11 },
+                callback: function(val) { return val.toFixed(2); }
+              }
+            }
+          }
+        }
+      });
+    })();
+    </script>
+    </div>
+    <div style="background:#fff;border-radius:16px;padding:24px 28px;margin-bottom:24px;
+                box-shadow:0 2px 12px rgba(0,0,0,0.06);border:1px solid #E8EEF8">
+
+      <!-- 섹션 헤더 -->
+      <div style="display:flex;align-items:center;margin-bottom:16px;gap:10px">
+        <span style="font-size:22px">📊</span>
+        <h2 style="margin:0;font-size:17px;font-weight:700;color:#1E293B">한국 국채 금리</h2>
+      </div>
+
+      <!-- 트렌드 코멘트 -->
+      <div style="background:#F0F5FF;border-left:4px solid #2764EB;
+                  padding:10px 16px;border-radius:0 8px 8px 0;
+                  font-size:13.5px;color:#334155;margin-bottom:18px;line-height:1.6">
+        💡 <b>국고채권 (3년), 국고채권 (10년)</b> 상승 (전기 대비)
+      </div>
+
+      <!-- 데이터 테이블 -->
+      <div style="overflow-x:auto">
+        <table style="width:100%;border-collapse:collapse;font-size:14px">
+          <thead>
+            <tr style="background:#F1F5F9">
+              <th style="padding:10px 14px;text-align:left;color:#64748B;font-weight:600;border-radius:8px 0 0 8px">항목</th>
+              <th style="padding:10px 14px;text-align:right;color:#64748B;font-weight:600">2026년 03월 06일</th>
+              <th style="padding:10px 14px;text-align:right;color:#64748B;font-weight:600">2026년 02월</th>
+              <th style="padding:10px 14px;text-align:right;color:#64748B;font-weight:600;border-radius:0 8px 8px 0">변동</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+        <tr>
+          <td style="padding:10px 14px;font-weight:600;color:#334155;white-space:nowrap">국고채권 (1년)</td>
+          <td style="padding:10px 14px;text-align:right;font-family:monospace;font-size:15px;color:#1E293B;font-weight:700">2.742%</td>
+          <td style="padding:10px 14px;text-align:right;font-family:monospace;color:#64748B">2.644%</td>
+          <td style="padding:10px 14px;text-align:right"><span style="color:#EF4444;font-weight:bold">▲ +9.8bp</span></td>
+        </tr>
+        <tr>
+          <td style="padding:10px 14px;font-weight:600;color:#334155;white-space:nowrap">국고채권 (3년)</td>
+          <td style="padding:10px 14px;text-align:right;font-family:monospace;font-size:15px;color:#1E293B;font-weight:700">3.227%</td>
+          <td style="padding:10px 14px;text-align:right;font-family:monospace;color:#64748B">3.041%</td>
+          <td style="padding:10px 14px;text-align:right"><span style="color:#EF4444;font-weight:bold">▲ +18.6bp</span></td>
+        </tr>
+        <tr>
+          <td style="padding:10px 14px;font-weight:600;color:#334155;white-space:nowrap">국고채권 (10년)</td>
+          <td style="padding:10px 14px;text-align:right;font-family:monospace;font-size:15px;color:#1E293B;font-weight:700">3.616%</td>
+          <td style="padding:10px 14px;text-align:right;font-family:monospace;color:#64748B">3.446%</td>
+          <td style="padding:10px 14px;text-align:right"><span style="color:#EF4444;font-weight:bold">▲ +17.0bp</span></td>
+        </tr>
+          </tbody>
+        </table>
+      </div>
+
+      
+    <div style="margin-top:20px;border-top:1px solid #E2E8F0;padding-top:16px">
+      <div style="font-size:12px;color:#94A3B8;margin-bottom:12px">📈 추이 (최근 12개월)</div>
+      <div style="position:relative;height:240px">
+        <canvas id="chart_2"></canvas>
+      </div>
+    </div>
+    <script>
+    (function() {
+      var ctx = document.getElementById('chart_2').getContext('2d');
+      new Chart(ctx, {
+        type: 'line',
+        data: {"labels": ["25.04", "25.05", "25.06", "25.07", "25.08", "25.09", "25.10", "25.11", "25.12", "26.01", "26.02", "26.03.06"], "datasets": [{"label": "국고채권 (1년)", "data": [2.374, 2.276, 2.302, 2.297, 2.248, 2.325, 2.438, 2.517, 2.556, 2.694, 2.644, 2.742], "borderColor": "#2764EB", "backgroundColor": "rgba(39,100,235,0.08)", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 7, "pointBackgroundColor": "#2764EB", "tension": 0.3, "fill": false}, {"label": "국고채권 (3년)", "data": [2.267, 2.347, 2.452, 2.46, 2.426, 2.582, 2.716, 2.991, 2.953, 3.138, 3.041, 3.227], "borderColor": "#10B981", "backgroundColor": "rgba(16,185,129,0.08)", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 7, "pointBackgroundColor": "#10B981", "tension": 0.3, "fill": false}, {"label": "국고채권 (10년)", "data": [2.563, 2.786, 2.805, 2.785, 2.815, 2.951, 3.061, 3.344, 3.385, 3.607, 3.446, 3.616], "borderColor": "#F59E0B", "backgroundColor": "rgba(245,158,11,0.08)", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 7, "pointBackgroundColor": "#F59E0B", "tension": 0.3, "fill": false}]},
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          interaction: { mode: 'index', intersect: false },
+          plugins: {
+            legend: {
+              position: 'bottom',
+              labels: {
+                font: { size: 12 },
+                color: '#334155',
+                usePointStyle: true,
+                padding: 16,
+              }
+            },
+            tooltip: {
+              backgroundColor: 'rgba(15,23,42,0.85)',
+              titleColor: '#94A3B8',
+              bodyColor: '#F1F5F9',
+              padding: 12,
+              cornerRadius: 8,
+              callbacks: {
+                label: function(ctx) {
+                  return ' ' + ctx.dataset.label + ': ' + ctx.parsed.y.toFixed(2) + '%';
+                }
+              }
+            }
+          },
+          scales: {
+            x: {
+              grid: { display: false },
+              ticks: { color: '#64748B', font: { size: 11 } }
+            },
+            y: {
+              grid: { color: '#E2E8F0', lineWidth: 1 },
+              ticks: {
+                color: '#64748B',
+                font: { size: 11 },
+                callback: function(val) { return val.toFixed(2); }
+              }
+            }
+          }
+        }
+      });
+    })();
+    </script>
+    </div>
+    <div style="background:#fff;border-radius:16px;padding:24px 28px;margin-bottom:24px;
+                box-shadow:0 2px 12px rgba(0,0,0,0.06);border:1px solid #E8EEF8">
+
+      <!-- 섹션 헤더 -->
+      <div style="display:flex;align-items:center;margin-bottom:16px;gap:10px">
+        <span style="font-size:22px">💰</span>
+        <h2 style="margin:0;font-size:17px;font-weight:700;color:#1E293B">콜금리·CD·COFIX</h2>
+      </div>
+
+      <!-- 트렌드 코멘트 -->
+      <div style="background:#F0F5FF;border-left:4px solid #2764EB;
+                  padding:10px 16px;border-radius:0 8px 8px 0;
+                  font-size:13.5px;color:#334155;margin-bottom:18px;line-height:1.6">
+        💡 <b>콜금리</b> 하락 / <b>CD (91일), COFIX (신규)</b> 보합 (전기 대비)
+      </div>
+
+      <!-- 데이터 테이블 -->
+      <div style="overflow-x:auto">
+        <table style="width:100%;border-collapse:collapse;font-size:14px">
+          <thead>
+            <tr style="background:#F1F5F9">
+              <th style="padding:10px 14px;text-align:left;color:#64748B;font-weight:600;border-radius:8px 0 0 8px">항목</th>
+              <th style="padding:10px 14px;text-align:right;color:#64748B;font-weight:600">2026년 03월 06일</th>
+              <th style="padding:10px 14px;text-align:right;color:#64748B;font-weight:600">2026년 02월</th>
+              <th style="padding:10px 14px;text-align:right;color:#64748B;font-weight:600;border-radius:0 8px 8px 0">변동</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+        <tr>
+          <td style="padding:10px 14px;font-weight:600;color:#334155;white-space:nowrap">콜금리</td>
+          <td style="padding:10px 14px;text-align:right;font-family:monospace;font-size:15px;color:#1E293B;font-weight:700">2.51%</td>
+          <td style="padding:10px 14px;text-align:right;font-family:monospace;color:#64748B">2.60%</td>
+          <td style="padding:10px 14px;text-align:right"><span style="color:#2764EB;font-weight:bold">▼ -9.5bp</span></td>
+        </tr>
+        <tr>
+          <td style="padding:10px 14px;font-weight:600;color:#334155;white-space:nowrap">CD (91일)</td>
+          <td style="padding:10px 14px;text-align:right;font-family:monospace;font-size:15px;color:#1E293B;font-weight:700">2.81%</td>
+          <td style="padding:10px 14px;text-align:right;font-family:monospace;color:#64748B">2.81%</td>
+          <td style="padding:10px 14px;text-align:right"><span style="color:#64748B;font-weight:bold">→ 0.0bp</span></td>
+        </tr>
+        <tr>
+          <td style="padding:10px 14px;font-weight:600;color:#334155;white-space:nowrap">COFIX (신규)</td>
+          <td style="padding:10px 14px;text-align:right;font-family:monospace;font-size:15px;color:#1E293B;font-weight:700">2.77%</td>
+          <td style="padding:10px 14px;text-align:right;font-family:monospace;color:#64748B">2.77%</td>
+          <td style="padding:10px 14px;text-align:right"><span style="color:#64748B;font-weight:bold">→ 0.0bp</span></td>
+        </tr>
+          </tbody>
+        </table>
+      </div>
+
+      
+    <div style="margin-top:20px;border-top:1px solid #E2E8F0;padding-top:16px">
+      <div style="font-size:12px;color:#94A3B8;margin-bottom:12px">📈 추이 (최근 12개월)</div>
+      <div style="position:relative;height:240px">
+        <canvas id="chart_3"></canvas>
+      </div>
+    </div>
+    <script>
+    (function() {
+      var ctx = document.getElementById('chart_3').getContext('2d');
+      new Chart(ctx, {
+        type: 'line',
+        data: {"labels": ["25.04", "25.05", "25.06", "25.07", "25.08", "25.09", "25.10", "25.11", "25.12", "26.01", "26.02", "26.03.06"], "datasets": [{"label": "콜금리", "data": [2.783, 2.582, 2.566, 2.514, 2.521, 2.575, 2.511, 2.514, 2.625, 2.523, 2.602, 2.507], "borderColor": "#2764EB", "backgroundColor": "rgba(39,100,235,0.08)", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 7, "pointBackgroundColor": "#2764EB", "tension": 0.3, "fill": false}, {"label": "CD (91일)", "data": [2.71, 2.59, 2.56, 2.51, 2.53, 2.57, 2.55, 2.8, 2.81, 2.73, 2.81, 2.81], "borderColor": "#10B981", "backgroundColor": "rgba(16,185,129,0.08)", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 7, "pointBackgroundColor": "#10B981", "tension": 0.3, "fill": false}, {"label": "COFIX (신규)", "data": [2.84, 2.7, 2.63, 2.51, 2.51, 2.49, 2.52, 2.57, 2.81, 2.89, 2.77, 2.77], "borderColor": "#F59E0B", "backgroundColor": "rgba(245,158,11,0.08)", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 7, "pointBackgroundColor": "#F59E0B", "tension": 0.3, "fill": false}]},
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          interaction: { mode: 'index', intersect: false },
+          plugins: {
+            legend: {
+              position: 'bottom',
+              labels: {
+                font: { size: 12 },
+                color: '#334155',
+                usePointStyle: true,
+                padding: 16,
+              }
+            },
+            tooltip: {
+              backgroundColor: 'rgba(15,23,42,0.85)',
+              titleColor: '#94A3B8',
+              bodyColor: '#F1F5F9',
+              padding: 12,
+              cornerRadius: 8,
+              callbacks: {
+                label: function(ctx) {
+                  return ' ' + ctx.dataset.label + ': ' + ctx.parsed.y.toFixed(2) + '%';
+                }
+              }
+            }
+          },
+          scales: {
+            x: {
+              grid: { display: false },
+              ticks: { color: '#64748B', font: { size: 11 } }
+            },
+            y: {
+              grid: { color: '#E2E8F0', lineWidth: 1 },
+              ticks: {
+                color: '#64748B',
+                font: { size: 11 },
+                callback: function(val) { return val.toFixed(2); }
+              }
+            }
+          }
+        }
+      });
+    })();
+    </script>
+    </div>
+    <div style="background:#fff;border-radius:16px;padding:24px 28px;margin-bottom:24px;
+                box-shadow:0 2px 12px rgba(0,0,0,0.06);border:1px solid #E8EEF8">
+
+      <!-- 섹션 헤더 -->
+      <div style="display:flex;align-items:center;margin-bottom:16px;gap:10px">
+        <span style="font-size:22px">🏢</span>
+        <h2 style="margin:0;font-size:17px;font-weight:700;color:#1E293B">회사채 3년물</h2>
+      </div>
+
+      <!-- 트렌드 코멘트 -->
+      <div style="background:#F0F5FF;border-left:4px solid #2764EB;
+                  padding:10px 16px;border-radius:0 8px 8px 0;
+                  font-size:13.5px;color:#334155;margin-bottom:18px;line-height:1.6">
+        💡 <b>회사채 (3년 AA-), 회사채 (3년 BBB-)</b> 상승 (전기 대비)
+      </div>
+
+      <!-- 데이터 테이블 -->
+      <div style="overflow-x:auto">
+        <table style="width:100%;border-collapse:collapse;font-size:14px">
+          <thead>
+            <tr style="background:#F1F5F9">
+              <th style="padding:10px 14px;text-align:left;color:#64748B;font-weight:600;border-radius:8px 0 0 8px">항목</th>
+              <th style="padding:10px 14px;text-align:right;color:#64748B;font-weight:600">2026년 03월 06일</th>
+              <th style="padding:10px 14px;text-align:right;color:#64748B;font-weight:600">2026년 02월</th>
+              <th style="padding:10px 14px;text-align:right;color:#64748B;font-weight:600;border-radius:0 8px 8px 0">변동</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+        <tr>
+          <td style="padding:10px 14px;font-weight:600;color:#334155;white-space:nowrap">회사채 (3년 BBB-)</td>
+          <td style="padding:10px 14px;text-align:right;font-family:monospace;font-size:15px;color:#1E293B;font-weight:700">9.614%</td>
+          <td style="padding:10px 14px;text-align:right;font-family:monospace;color:#64748B">9.467%</td>
+          <td style="padding:10px 14px;text-align:right"><span style="color:#EF4444;font-weight:bold">▲ +14.7bp</span></td>
+        </tr>
+        <tr>
+          <td style="padding:10px 14px;font-weight:600;color:#334155;white-space:nowrap">회사채 (3년 AA-)</td>
+          <td style="padding:10px 14px;text-align:right;font-family:monospace;font-size:15px;color:#1E293B;font-weight:700">3.815%</td>
+          <td style="padding:10px 14px;text-align:right;font-family:monospace;color:#64748B">3.637%</td>
+          <td style="padding:10px 14px;text-align:right"><span style="color:#EF4444;font-weight:bold">▲ +17.8bp</span></td>
+        </tr>
+          </tbody>
+        </table>
+      </div>
+
+      
+    <div style="margin-top:20px;border-top:1px solid #E2E8F0;padding-top:16px">
+      <div style="font-size:12px;color:#94A3B8;margin-bottom:12px">📈 추이 (최근 12개월)</div>
+      <div style="position:relative;height:240px">
+        <canvas id="chart_4"></canvas>
+      </div>
+    </div>
+    <script>
+    (function() {
+      var ctx = document.getElementById('chart_4').getContext('2d');
+      new Chart(ctx, {
+        type: 'line',
+        data: {"labels": ["25.04", "25.05", "25.06", "25.07", "25.08", "25.09", "25.10", "25.11", "25.12", "26.01", "26.02", "26.03.06"], "datasets": [{"label": "회사채 (3년 BBB-)", "data": [8.62, 8.669, 8.776, 8.782, 8.746, 8.868, 8.972, 9.278, 9.312, 9.491, 9.467, 9.614], "borderColor": "#2764EB", "backgroundColor": "rgba(39,100,235,0.08)", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 7, "pointBackgroundColor": "#2764EB", "tension": 0.3, "fill": false}, {"label": "회사채 (3년 AA-)", "data": [2.868, 2.917, 2.963, 2.952, 2.906, 3.022, 3.122, 3.428, 3.476, 3.658, 3.637, 3.815], "borderColor": "#10B981", "backgroundColor": "rgba(16,185,129,0.08)", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 7, "pointBackgroundColor": "#10B981", "tension": 0.3, "fill": false}]},
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          interaction: { mode: 'index', intersect: false },
+          plugins: {
+            legend: {
+              position: 'bottom',
+              labels: {
+                font: { size: 12 },
+                color: '#334155',
+                usePointStyle: true,
+                padding: 16,
+              }
+            },
+            tooltip: {
+              backgroundColor: 'rgba(15,23,42,0.85)',
+              titleColor: '#94A3B8',
+              bodyColor: '#F1F5F9',
+              padding: 12,
+              cornerRadius: 8,
+              callbacks: {
+                label: function(ctx) {
+                  return ' ' + ctx.dataset.label + ': ' + ctx.parsed.y.toFixed(2) + '%';
+                }
+              }
+            }
+          },
+          scales: {
+            x: {
+              grid: { display: false },
+              ticks: { color: '#64748B', font: { size: 11 } }
+            },
+            y: {
+              grid: { color: '#E2E8F0', lineWidth: 1 },
+              ticks: {
+                color: '#64748B',
+                font: { size: 11 },
+                callback: function(val) { return val.toFixed(2); }
+              }
+            }
+          }
+        }
+      });
+    })();
+    </script>
+    </div>
+    <div style="background:#fff;border-radius:16px;padding:24px 28px;margin-bottom:24px;
+                box-shadow:0 2px 12px rgba(0,0,0,0.06);border:1px solid #E8EEF8">
+
+      <!-- 섹션 헤더 -->
+      <div style="display:flex;align-items:center;margin-bottom:16px;gap:10px">
+        <span style="font-size:22px">💳</span>
+        <h2 style="margin:0;font-size:17px;font-weight:700;color:#1E293B">여전채 민평금리 (3년물)</h2>
+      </div>
+
+      <!-- 트렌드 코멘트 -->
+      <div style="background:#F0F5FF;border-left:4px solid #2764EB;
+                  padding:10px 16px;border-radius:0 8px 8px 0;
+                  font-size:13.5px;color:#334155;margin-bottom:18px;line-height:1.6">
+        💡 <b>A0, A+</b> 상승 (전기 대비)
+      </div>
+
+      <!-- 데이터 테이블 -->
+      <div style="overflow-x:auto">
+        <table style="width:100%;border-collapse:collapse;font-size:14px">
+          <thead>
+            <tr style="background:#F1F5F9">
+              <th style="padding:10px 14px;text-align:left;color:#64748B;font-weight:600;border-radius:8px 0 0 8px">항목</th>
+              <th style="padding:10px 14px;text-align:right;color:#64748B;font-weight:600">2026년 03월 06일</th>
+              <th style="padding:10px 14px;text-align:right;color:#64748B;font-weight:600">2026년 02월</th>
+              <th style="padding:10px 14px;text-align:right;color:#64748B;font-weight:600;border-radius:0 8px 8px 0">변동</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+        <tr>
+          <td style="padding:10px 14px;font-weight:600;color:#334155;white-space:nowrap">A0</td>
+          <td style="padding:10px 14px;text-align:right;font-family:monospace;font-size:15px;color:#1E293B;font-weight:700">5.437%</td>
+          <td style="padding:10px 14px;text-align:right;font-family:monospace;color:#64748B">5.269%</td>
+          <td style="padding:10px 14px;text-align:right"><span style="color:#EF4444;font-weight:bold">▲ +16.8bp</span></td>
+        </tr>
+        <tr>
+          <td style="padding:10px 14px;font-weight:600;color:#334155;white-space:nowrap">A+</td>
+          <td style="padding:10px 14px;text-align:right;font-family:monospace;font-size:15px;color:#1E293B;font-weight:700">4.661%</td>
+          <td style="padding:10px 14px;text-align:right;font-family:monospace;color:#64748B">4.494%</td>
+          <td style="padding:10px 14px;text-align:right"><span style="color:#EF4444;font-weight:bold">▲ +16.7bp</span></td>
+        </tr>
+        <tr>
+          <td style="padding:10px 14px;font-weight:600;color:#334155;white-space:nowrap">AA-</td>
+          <td style="padding:10px 14px;text-align:right;font-family:monospace;font-size:15px;color:#1E293B;font-weight:700">3.888%</td>
+          <td style="padding:10px 14px;text-align:right;font-family:monospace;color:#64748B">3.721%</td>
+          <td style="padding:10px 14px;text-align:right"><span style="color:#EF4444;font-weight:bold">▲ +16.7bp</span></td>
+        </tr>
+        <tr>
+          <td style="padding:10px 14px;font-weight:600;color:#334155;white-space:nowrap">AA+</td>
+          <td style="padding:10px 14px;text-align:right;font-family:monospace;font-size:15px;color:#1E293B;font-weight:700">3.746%</td>
+          <td style="padding:10px 14px;text-align:right;font-family:monospace;color:#64748B">3.585%</td>
+          <td style="padding:10px 14px;text-align:right"><span style="color:#EF4444;font-weight:bold">▲ +16.1bp</span></td>
+        </tr>
+          </tbody>
+        </table>
+      </div>
+
+      
+    <div style="margin-top:20px;border-top:1px solid #E2E8F0;padding-top:16px">
+      <div style="font-size:12px;color:#94A3B8;margin-bottom:12px">📈 추이 (최근 12개월)</div>
+      <div style="position:relative;height:240px">
+        <canvas id="chart_5"></canvas>
+      </div>
+    </div>
+    <script>
+    (function() {
+      var ctx = document.getElementById('chart_5').getContext('2d');
+      new Chart(ctx, {
+        type: 'line',
+        data: {"labels": ["25.04", "25.05", "25.06", "25.07", "25.08", "25.09", "25.10", "25.11", "25.12", "26.01", "26.02", "26.03.06"], "datasets": [{"label": "A0", "data": [4.534, 4.548, 4.621, 4.58, 4.532, 4.63, 4.718, 5.075, 5.054, 5.279, 5.269, 5.437], "borderColor": "#2764EB", "backgroundColor": "rgba(39,100,235,0.08)", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 7, "pointBackgroundColor": "#2764EB", "tension": 0.3, "fill": false}, {"label": "A+", "data": [3.731, 3.747, 3.82, 3.781, 3.737, 3.829, 3.916, 4.286, 4.269, 4.495, 4.494, 4.661], "borderColor": "#10B981", "backgroundColor": "rgba(16,185,129,0.08)", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 7, "pointBackgroundColor": "#10B981", "tension": 0.3, "fill": false}, {"label": "AA-", "data": [2.887, 2.899, 2.968, 2.926, 2.903, 3.003, 3.111, 3.515, 3.498, 3.709, 3.721, 3.888], "borderColor": "#F59E0B", "backgroundColor": "rgba(245,158,11,0.08)", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 7, "pointBackgroundColor": "#F59E0B", "tension": 0.3, "fill": false}, {"label": "AA+", "data": [2.743, 2.758, 2.833, 2.794, 2.776, 2.881, 2.988, 3.391, 3.37, 3.579, 3.585, 3.746], "borderColor": "#EF4444", "backgroundColor": "rgba(239,68,68,0.08)", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 7, "pointBackgroundColor": "#EF4444", "tension": 0.3, "fill": false}]},
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          interaction: { mode: 'index', intersect: false },
+          plugins: {
+            legend: {
+              position: 'bottom',
+              labels: {
+                font: { size: 12 },
+                color: '#334155',
+                usePointStyle: true,
+                padding: 16,
+              }
+            },
+            tooltip: {
+              backgroundColor: 'rgba(15,23,42,0.85)',
+              titleColor: '#94A3B8',
+              bodyColor: '#F1F5F9',
+              padding: 12,
+              cornerRadius: 8,
+              callbacks: {
+                label: function(ctx) {
+                  return ' ' + ctx.dataset.label + ': ' + ctx.parsed.y.toFixed(2) + '%';
+                }
+              }
+            }
+          },
+          scales: {
+            x: {
+              grid: { display: false },
+              ticks: { color: '#64748B', font: { size: 11 } }
+            },
+            y: {
+              grid: { color: '#E2E8F0', lineWidth: 1 },
+              ticks: {
+                color: '#64748B',
+                font: { size: 11 },
+                callback: function(val) { return val.toFixed(2); }
+              }
+            }
+          }
+        }
+      });
+    })();
+    </script>
+    </div>
+    <div style="background:#fff;border-radius:16px;padding:24px 28px;margin-bottom:24px;
+                box-shadow:0 2px 12px rgba(0,0,0,0.06);border:1px solid #E8EEF8">
+
+      <!-- 섹션 헤더 -->
+      <div style="display:flex;align-items:center;margin-bottom:16px;gap:10px">
+        <span style="font-size:22px">📄</span>
+        <h2 style="margin:0;font-size:17px;font-weight:700;color:#1E293B">기업어음(CP) 금리 (1년물)</h2>
+      </div>
+
+      <!-- 트렌드 코멘트 -->
+      <div style="background:#F0F5FF;border-left:4px solid #2764EB;
+                  padding:10px 16px;border-radius:0 8px 8px 0;
+                  font-size:13.5px;color:#334155;margin-bottom:18px;line-height:1.6">
+        💡 <b>A3(1년), A2+(1년)</b> 보합 (전기 대비)
+      </div>
+
+      <!-- 데이터 테이블 -->
+      <div style="overflow-x:auto">
+        <table style="width:100%;border-collapse:collapse;font-size:14px">
+          <thead>
+            <tr style="background:#F1F5F9">
+              <th style="padding:10px 14px;text-align:left;color:#64748B;font-weight:600;border-radius:8px 0 0 8px">항목</th>
+              <th style="padding:10px 14px;text-align:right;color:#64748B;font-weight:600">2026년 03월 06일</th>
+              <th style="padding:10px 14px;text-align:right;color:#64748B;font-weight:600">2026년 02월</th>
+              <th style="padding:10px 14px;text-align:right;color:#64748B;font-weight:600;border-radius:0 8px 8px 0">변동</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+        <tr>
+          <td style="padding:10px 14px;font-weight:600;color:#334155;white-space:nowrap">A3(1년)</td>
+          <td style="padding:10px 14px;text-align:right;font-family:monospace;font-size:15px;color:#1E293B;font-weight:700">5.93%</td>
+          <td style="padding:10px 14px;text-align:right;font-family:monospace;color:#64748B">5.93%</td>
+          <td style="padding:10px 14px;text-align:right"><span style="color:#64748B;font-weight:bold">→ 0.0bp</span></td>
+        </tr>
+        <tr>
+          <td style="padding:10px 14px;font-weight:600;color:#334155;white-space:nowrap">A2+(1년)</td>
+          <td style="padding:10px 14px;text-align:right;font-family:monospace;font-size:15px;color:#1E293B;font-weight:700">3.29%</td>
+          <td style="padding:10px 14px;text-align:right;font-family:monospace;color:#64748B">3.29%</td>
+          <td style="padding:10px 14px;text-align:right"><span style="color:#64748B;font-weight:bold">→ 0.0bp</span></td>
+        </tr>
+        <tr>
+          <td style="padding:10px 14px;font-weight:600;color:#334155;white-space:nowrap">A1(1년)</td>
+          <td style="padding:10px 14px;text-align:right;font-family:monospace;font-size:15px;color:#1E293B;font-weight:700">3.15%</td>
+          <td style="padding:10px 14px;text-align:right;font-family:monospace;color:#64748B">3.15%</td>
+          <td style="padding:10px 14px;text-align:right"><span style="color:#64748B;font-weight:bold">→ 0.0bp</span></td>
+        </tr>
+          </tbody>
+        </table>
+      </div>
+
+      
+    <div style="margin-top:20px;border-top:1px solid #E2E8F0;padding-top:16px">
+      <div style="font-size:12px;color:#94A3B8;margin-bottom:12px">📈 추이 (최근 12개월)</div>
+      <div style="position:relative;height:240px">
+        <canvas id="chart_6"></canvas>
+      </div>
+    </div>
+    <script>
+    (function() {
+      var ctx = document.getElementById('chart_6').getContext('2d');
+      new Chart(ctx, {
+        type: 'line',
+        data: {"labels": ["25.04", "25.05", "25.06", "25.07", "25.08", "25.09", "25.10", "25.11", "25.12", "26.01", "26.02", "26.03.06"], "datasets": [{"label": "A3(1년)", "data": [5.82, 5.65, 5.6, 5.6, 5.6, 5.6, 5.6, 5.9, 6.04, 5.92, 5.93, 5.93], "borderColor": "#2764EB", "backgroundColor": "rgba(39,100,235,0.08)", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 7, "pointBackgroundColor": "#2764EB", "tension": 0.3, "fill": false}, {"label": "A2+(1년)", "data": [3.16, 2.99, 2.94, 2.94, 2.94, 2.94, 2.94, 3.24, 3.4, 3.28, 3.29, 3.29], "borderColor": "#10B981", "backgroundColor": "rgba(16,185,129,0.08)", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 7, "pointBackgroundColor": "#10B981", "tension": 0.3, "fill": false}, {"label": "A1(1년)", "data": [2.96, 2.79, 2.74, 2.74, 2.74, 2.74, 2.75, 3.09, 3.25, 3.14, 3.15, 3.15], "borderColor": "#F59E0B", "backgroundColor": "rgba(245,158,11,0.08)", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 7, "pointBackgroundColor": "#F59E0B", "tension": 0.3, "fill": false}]},
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          interaction: { mode: 'index', intersect: false },
+          plugins: {
+            legend: {
+              position: 'bottom',
+              labels: {
+                font: { size: 12 },
+                color: '#334155',
+                usePointStyle: true,
+                padding: 16,
+              }
+            },
+            tooltip: {
+              backgroundColor: 'rgba(15,23,42,0.85)',
+              titleColor: '#94A3B8',
+              bodyColor: '#F1F5F9',
+              padding: 12,
+              cornerRadius: 8,
+              callbacks: {
+                label: function(ctx) {
+                  return ' ' + ctx.dataset.label + ': ' + ctx.parsed.y.toFixed(2) + '%';
+                }
+              }
+            }
+          },
+          scales: {
+            x: {
+              grid: { display: false },
+              ticks: { color: '#64748B', font: { size: 11 } }
+            },
+            y: {
+              grid: { color: '#E2E8F0', lineWidth: 1 },
+              ticks: {
+                color: '#64748B',
+                font: { size: 11 },
+                callback: function(val) { return val.toFixed(2); }
+              }
+            }
+          }
+        }
+      });
+    })();
+    </script>
+    </div>
+    <div style="background:#fff;border-radius:16px;padding:24px 28px;margin-bottom:24px;
+                box-shadow:0 2px 12px rgba(0,0,0,0.06);border:1px solid #E8EEF8">
+
+      <!-- 섹션 헤더 -->
+      <div style="display:flex;align-items:center;margin-bottom:16px;gap:10px">
+        <span style="font-size:22px">🏪</span>
+        <h2 style="margin:0;font-size:17px;font-weight:700;color:#1E293B">저축은행 예금금리 (1년, 창구 기본상품 기준)</h2>
+      </div>
+
+      <!-- 트렌드 코멘트 -->
+      <div style="background:#F0F5FF;border-left:4px solid #2764EB;
+                  padding:10px 16px;border-radius:0 8px 8px 0;
+                  font-size:13.5px;color:#334155;margin-bottom:18px;line-height:1.6">
+        💡 <b>OK, 한국투자</b> 상승 / <b>SBI, 웰컴</b> 보합 (전기 대비)
+      </div>
+
+      <!-- 데이터 테이블 -->
+      <div style="overflow-x:auto">
+        <table style="width:100%;border-collapse:collapse;font-size:14px">
+          <thead>
+            <tr style="background:#F1F5F9">
+              <th style="padding:10px 14px;text-align:left;color:#64748B;font-weight:600;border-radius:8px 0 0 8px">항목</th>
+              <th style="padding:10px 14px;text-align:right;color:#64748B;font-weight:600">2026년 03월 06일</th>
+              <th style="padding:10px 14px;text-align:right;color:#64748B;font-weight:600">2026년 02월</th>
+              <th style="padding:10px 14px;text-align:right;color:#64748B;font-weight:600;border-radius:0 8px 8px 0">변동</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+        <tr>
+          <td style="padding:10px 14px;font-weight:600;color:#334155;white-space:nowrap">평균</td>
+          <td style="padding:10px 14px;text-align:right;font-family:monospace;font-size:15px;color:#1E293B;font-weight:700">3.05%</td>
+          <td style="padding:10px 14px;text-align:right;font-family:monospace;color:#64748B">2.98%</td>
+          <td style="padding:10px 14px;text-align:right"><span style="color:#EF4444;font-weight:bold">▲ +7.2bp</span></td>
+        </tr>
+        <tr>
+          <td style="padding:10px 14px;font-weight:600;color:#334155;white-space:nowrap">SBI</td>
+          <td style="padding:10px 14px;text-align:right;font-family:monospace;font-size:15px;color:#1E293B;font-weight:700">3.00%</td>
+          <td style="padding:10px 14px;text-align:right;font-family:monospace;color:#64748B">3.00%</td>
+          <td style="padding:10px 14px;text-align:right"><span style="color:#64748B;font-weight:bold">→ 0.0bp</span></td>
+        </tr>
+        <tr>
+          <td style="padding:10px 14px;font-weight:600;color:#334155;white-space:nowrap">OK</td>
+          <td style="padding:10px 14px;text-align:right;font-family:monospace;font-size:15px;color:#1E293B;font-weight:700">2.81%</td>
+          <td style="padding:10px 14px;text-align:right;font-family:monospace;color:#64748B">2.60%</td>
+          <td style="padding:10px 14px;text-align:right"><span style="color:#EF4444;font-weight:bold">▲ +21.0bp</span></td>
+        </tr>
+        <tr>
+          <td style="padding:10px 14px;font-weight:600;color:#334155;white-space:nowrap">한국투자</td>
+          <td style="padding:10px 14px;text-align:right;font-family:monospace;font-size:15px;color:#1E293B;font-weight:700">3.10%</td>
+          <td style="padding:10px 14px;text-align:right;font-family:monospace;color:#64748B">3.00%</td>
+          <td style="padding:10px 14px;text-align:right"><span style="color:#EF4444;font-weight:bold">▲ +10.0bp</span></td>
+        </tr>
+        <tr>
+          <td style="padding:10px 14px;font-weight:600;color:#334155;white-space:nowrap">웰컴</td>
+          <td style="padding:10px 14px;text-align:right;font-family:monospace;font-size:15px;color:#1E293B;font-weight:700">3.20%</td>
+          <td style="padding:10px 14px;text-align:right;font-family:monospace;color:#64748B">3.20%</td>
+          <td style="padding:10px 14px;text-align:right"><span style="color:#64748B;font-weight:bold">→ 0.0bp</span></td>
+        </tr>
+          </tbody>
+        </table>
+      </div>
+
+      
+    <div style="margin-top:20px;border-top:1px solid #E2E8F0;padding-top:16px">
+      <div style="font-size:12px;color:#94A3B8;margin-bottom:12px">📈 추이 (최근 12개월)</div>
+      <div style="position:relative;height:240px">
+        <canvas id="chart_7"></canvas>
+      </div>
+    </div>
+    <script>
+    (function() {
+      var ctx = document.getElementById('chart_7').getContext('2d');
+      new Chart(ctx, {
+        type: 'line',
+        data: {"labels": ["25.04", "25.05", "25.06", "25.07", "25.08", "25.09", "25.10", "25.11", "25.12", "26.01", "26.02", "26.03.06"], "datasets": [{"label": "평균", "data": [2.85, 2.92, 2.89, 2.89, 2.85, 2.79, 2.68, 2.77, 2.85, 2.87, 2.98, 3.052], "borderColor": "#2764EB", "backgroundColor": "rgba(39,100,235,0.08)", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 7, "pointBackgroundColor": "#2764EB", "tension": 0.3, "fill": false}, {"label": "SBI", "data": [3.0, 3.0, 2.75, 2.75, 2.75, 2.75, 2.75, 2.6, 2.8, 2.8, 3.0, 3.0], "borderColor": "#10B981", "backgroundColor": "rgba(16,185,129,0.08)", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 7, "pointBackgroundColor": "#10B981", "tension": 0.3, "fill": false}, {"label": "OK", "data": [2.7, 2.7, 2.7, 2.7, 2.7, 2.7, 2.6, 2.6, 2.6, 2.6, 2.6, 2.81], "borderColor": "#F59E0B", "backgroundColor": "rgba(245,158,11,0.08)", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 7, "pointBackgroundColor": "#F59E0B", "tension": 0.3, "fill": false}, {"label": "한국투자", "data": [2.85, 2.85, 2.95, 2.95, 2.85, 2.75, 2.65, 2.7, 3.0, 3.0, 3.0, 3.1], "borderColor": "#EF4444", "backgroundColor": "rgba(239,68,68,0.08)", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 7, "pointBackgroundColor": "#EF4444", "tension": 0.3, "fill": false}, {"label": "웰컴", "data": [3.0, 3.0, 3.0, 3.0, 2.9, 2.8, 2.8, 3.0, 2.9, 3.0, 3.2, 3.2], "borderColor": "#8B5CF6", "backgroundColor": "rgba(139,92,246,0.08)", "borderWidth": 2, "pointRadius": 4, "pointHoverRadius": 7, "pointBackgroundColor": "#8B5CF6", "tension": 0.3, "fill": false}]},
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          interaction: { mode: 'index', intersect: false },
+          plugins: {
+            legend: {
+              position: 'bottom',
+              labels: {
+                font: { size: 12 },
+                color: '#334155',
+                usePointStyle: true,
+                padding: 16,
+              }
+            },
+            tooltip: {
+              backgroundColor: 'rgba(15,23,42,0.85)',
+              titleColor: '#94A3B8',
+              bodyColor: '#F1F5F9',
+              padding: 12,
+              cornerRadius: 8,
+              callbacks: {
+                label: function(ctx) {
+                  return ' ' + ctx.dataset.label + ': ' + ctx.parsed.y.toFixed(2) + '%';
+                }
+              }
+            }
+          },
+          scales: {
+            x: {
+              grid: { display: false },
+              ticks: { color: '#64748B', font: { size: 11 } }
+            },
+            y: {
+              grid: { color: '#E2E8F0', lineWidth: 1 },
+              ticks: {
+                color: '#64748B',
+                font: { size: 11 },
+                callback: function(val) { return val.toFixed(2); }
+              }
+            }
+          }
+        }
+      });
+    })();
+    </script>
+    </div>
+
+  <!-- ── 푸터 ── -->
+  <div style="text-align:center;padding:24px 0;color:#94A3B8;font-size:12px;
+              border-top:1px solid #E2E8F0;margin-top:8px">
+    <p>웰컴에프앤디(주) 자금팀 | 이 보고서는 내부 참고용으로 작성되었습니다.</p>
+    <p style="margin-top:4px">데이터 출처: 금융투자협회 채권정보센터, 은행연합회 소비자포털, 한국은행 경제통계시스템, 세이브로, 저축은행중앙회 소비자포털</p>
+  </div>
+
+</div>
+</body>
+</html>
