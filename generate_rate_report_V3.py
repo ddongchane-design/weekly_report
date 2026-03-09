@@ -225,8 +225,8 @@ def make_chartjs_html(section_name, items, n_recent=12):
     chart_data = json.dumps({'labels': labels, 'datasets': datasets}, ensure_ascii=False)
 
     return f'''
-    <div style="margin-top:20px;border-top:1px solid #E2E8F0;padding-top:16px">
-      <div style="font-size:12px;color:#94A3B8;margin-bottom:12px">📈 추이 (최근 12개월)</div>
+    <div style="margin-top:20px;border-top:1px solid var(--border);padding-top:16px">
+      <div style="font-size:12px;color:var(--muted);margin-bottom:12px">📈 추이 (최근 12개월)</div>
       <div style="position:relative;height:240px">
         <canvas id="{chart_id}"></canvas>
       </div>
@@ -314,15 +314,15 @@ def build_issues_html(issues):
                          border:1px solid {style['color']};">{cat}</span>
             <span style="font-size:14px;font-weight:700;color:#1E293B">{title}</span>
           </div>
-          <p style="font-size:13px;color:#475569;margin:0;line-height:1.6;padding-left:2px">{summary}</p>
+          <p style="font-size:13px;color:var(--text-sec);margin:0;line-height:1.6;padding-left:2px">{summary}</p>
         </div>'''
 
     return f'''
-    <div style="background:#fff;border-radius:16px;padding:24px 28px;margin-bottom:24px;
-                box-shadow:0 2px 12px rgba(0,0,0,0.06);border:1px solid #E8EEF8">
+    <div style="background:var(--card);border-radius:16px;padding:24px 28px;margin-bottom:24px;
+                box-shadow:0 2px 12px rgba(0,0,0,0.06);border:1px solid var(--border-card)">
       <div style="display:flex;align-items:center;margin-bottom:18px;gap:10px">
         <span style="font-size:22px">📰</span>
-        <h2 style="margin:0;font-size:17px;font-weight:700;color:#1E293B">주간 주요 이슈</h2>
+        <h2 style="margin:0;font-size:17px;font-weight:700;color:var(--text)">주간 주요 이슈</h2>
       </div>
       <div style="display:flex;flex-direction:column;gap:12px">
         {cards_html}
@@ -350,9 +350,9 @@ def build_section_html(section_name, section_data, icon, rate_decimals=2):
         prev_str = pct_format(prev, decimals=rate_decimals)
         rows_html += f'''
         <tr>
-          <td style="padding:10px 14px;font-weight:600;color:#334155;white-space:nowrap">{label}</td>
-          <td style="padding:10px 14px;text-align:right;font-family:monospace;font-size:15px;color:#1E293B;font-weight:700">{curr_str}</td>
-          <td style="padding:10px 14px;text-align:right;font-family:monospace;color:#64748B">{prev_str}</td>
+          <td style="padding:10px 14px;font-weight:600;color:var(--text-sec);white-space:nowrap">{label}</td>
+          <td style="padding:10px 14px;text-align:right;font-family:monospace;font-size:15px;color:var(--text);font-weight:700">{curr_str}</td>
+          <td style="padding:10px 14px;text-align:right;font-family:monospace;color:var(--muted)">{prev_str}</td>
           <td style="padding:10px 14px;text-align:right">{badge}</td>
         </tr>'''
 
@@ -365,19 +365,19 @@ def build_section_html(section_name, section_data, icon, rate_decimals=2):
     chart_html = chart_html_block
 
     return f'''
-    <div style="background:#fff;border-radius:16px;padding:24px 28px;margin-bottom:24px;
-                box-shadow:0 2px 12px rgba(0,0,0,0.06);border:1px solid #E8EEF8">
+    <div style="background:var(--card);border-radius:16px;padding:24px 28px;margin-bottom:24px;
+                box-shadow:0 2px 12px rgba(0,0,0,0.06);border:1px solid var(--border-card)">
 
       <!-- 섹션 헤더 -->
       <div style="display:flex;align-items:center;margin-bottom:16px;gap:10px">
         <span style="font-size:22px">{icon}</span>
-        <h2 style="margin:0;font-size:17px;font-weight:700;color:#1E293B">{section_name}</h2>
+        <h2 style="margin:0;font-size:17px;font-weight:700;color:var(--text)">{section_name}</h2>
       </div>
 
       <!-- 트렌드 코멘트 -->
-      <div style="background:#F0F5FF;border-left:4px solid #2764EB;
+      <div style="background:var(--comment-bg);border-left:4px solid #2764EB;
                   padding:10px 16px;border-radius:0 8px 8px 0;
-                  font-size:13.5px;color:#334155;margin-bottom:18px;line-height:1.6">
+                  font-size:13.5px;color:var(--text-sec);margin-bottom:18px;line-height:1.6">
         💡 {comment}
       </div>
 
@@ -385,11 +385,11 @@ def build_section_html(section_name, section_data, icon, rate_decimals=2):
       <div style="overflow-x:auto">
         <table style="width:100%;border-collapse:collapse;font-size:14px">
           <thead>
-            <tr style="background:#F1F5F9">
-              <th style="padding:10px 14px;text-align:left;color:#64748B;font-weight:600;border-radius:8px 0 0 8px">항목</th>
-              <th style="padding:10px 14px;text-align:right;color:#64748B;font-weight:600">{curr_label}</th>
-              <th style="padding:10px 14px;text-align:right;color:#64748B;font-weight:600">{prev_label}</th>
-              <th style="padding:10px 14px;text-align:right;color:#64748B;font-weight:600;border-radius:0 8px 8px 0">변동</th>
+            <tr style="background:var(--thead-bg)">
+              <th style="padding:10px 14px;text-align:left;color:var(--muted);font-weight:600;border-radius:8px 0 0 8px">항목</th>
+              <th style="padding:10px 14px;text-align:right;color:var(--muted);font-weight:600">{curr_label}</th>
+              <th style="padding:10px 14px;text-align:right;color:var(--muted);font-weight:600">{prev_label}</th>
+              <th style="padding:10px 14px;text-align:right;color:var(--muted);font-weight:600;border-radius:0 8px 8px 0">변동</th>
             </tr>
           </thead>
           <tbody>
@@ -420,15 +420,32 @@ def generate_html_report(sections, issues=None):
 <title>[웰컴에프앤디] 주간 금리 동향 - {report_date}</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 <style>
+  :root {{
+    --bg: #F5F7FB; --card: #FFFFFF; --text: #1E293B; --text-sec: #334155;
+    --muted: #64748B; --border: #E2E8F0; --border-card: #E8EEF8;
+    --thead-bg: #F1F5F9; --hover-bg: #F8FAFC; --comment-bg: #F0F5FF;
+  }}
+  [data-theme="dark"] {{
+    --bg: #0F172A; --card: #1E293B; --text: #F1F5F9; --text-sec: #CBD5E1;
+    --muted: #94A3B8; --border: #334155; --border-card: #334155;
+    --thead-bg: #273548; --hover-bg: #2D3F55; --comment-bg: #1B3A5C;
+  }}
   * {{ box-sizing: border-box; margin: 0; padding: 0; }}
   body {{
     font-family: 'Noto Sans KR', 'Malgun Gothic', '맑은 고딕', sans-serif;
-    background: #F5F7FB;
-    color: #1E293B;
-    padding: 0;
+    background: var(--bg); color: var(--text); padding: 0;
+    transition: background 0.25s, color 0.25s;
   }}
   .wrap {{ max-width: 860px; margin: 0 auto; padding: 32px 20px; }}
-  table tr:hover td {{ background: #F8FAFC; }}
+  table tr:hover td {{ background: var(--hover-bg); }}
+  .dark-toggle {{
+    position: fixed; top: 16px; right: 20px; z-index: 999;
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 50px; padding: 8px 18px; cursor: pointer;
+    font-size: 14px; color: var(--text);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.12); transition: all 0.2s;
+  }}
+  .dark-toggle:hover {{ opacity: 0.8; }}
 </style>
 </head>
 <body>
@@ -452,11 +469,11 @@ def generate_html_report(sections, issues=None):
   </div>
 
   <!-- ── 요약 배너 ── -->
-  <div style="background:#fff;border-radius:14px;padding:18px 24px;
-              margin-bottom:28px;border:1px solid #E2E8F0;
+  <div style="background:var(--card);border-radius:14px;padding:18px 24px;
+              margin-bottom:28px;border:1px solid var(--border);
               box-shadow:0 2px 8px rgba(0,0,0,0.04)">
-    <p style="font-size:13px;color:#64748B;margin-bottom:4px">📌 이 보고서는 주요 금리 지표의 최근 동향을 요약한 자료입니다.</p>
-    <p style="font-size:13px;color:#64748B">수치는 <b>전기(전월) 대비</b> 변동폭(bp, basis point)으로 표시됩니다. (1bp = 0.01%)</p>
+    <p style="font-size:13px;color:var(--muted);margin-bottom:4px">📌 이 보고서는 주요 금리 지표의 최근 동향을 요약한 자료입니다.</p>
+    <p style="font-size:13px;color:var(--muted)">수치는 <b>전기(전월) 대비</b> 변동폭(bp, basis point)으로 표시됩니다. (1bp = 0.01%)</p>
   </div>
 
   <!-- ── 주간 이슈 ── -->
@@ -466,13 +483,37 @@ def generate_html_report(sections, issues=None):
   {sections_html}
 
   <!-- ── 푸터 ── -->
-  <div style="text-align:center;padding:24px 0;color:#94A3B8;font-size:12px;
-              border-top:1px solid #E2E8F0;margin-top:8px">
+  <div style="text-align:center;padding:24px 0;color:var(--muted);font-size:12px;
+              border-top:1px solid var(--border);margin-top:8px">
     <p>웰컴에프앤디(주) 자금팀 | 이 보고서는 내부 참고용으로 작성되었습니다.</p>
     <p style="margin-top:4px">데이터 출처: 금융투자협회 채권정보센터, 은행연합회 소비자포털, 한국은행 경제통계시스템, 세이브로, 저축은행중앙회 소비자포털</p>
   </div>
 
 </div>
+
+<button class="dark-toggle" id="darkBtn" onclick="toggleDark()">🌙 다크모드</button>
+<script>
+  function toggleDark() {{
+    var html = document.documentElement;
+    var btn = document.getElementById('darkBtn');
+    if (html.getAttribute('data-theme') === 'dark') {{
+      html.removeAttribute('data-theme');
+      btn.textContent = '🌙 다크모드';
+      localStorage.setItem('theme', 'light');
+    }} else {{
+      html.setAttribute('data-theme', 'dark');
+      btn.textContent = '☀️ 라이트모드';
+      localStorage.setItem('theme', 'dark');
+    }}
+  }}
+  (function() {{
+    if (localStorage.getItem('theme') === 'dark') {{
+      document.documentElement.setAttribute('data-theme', 'dark');
+      var btn = document.getElementById('darkBtn');
+      if (btn) btn.textContent = '☀️ 라이트모드';
+    }}
+  }})();
+</script>
 </body>
 </html>'''
 
