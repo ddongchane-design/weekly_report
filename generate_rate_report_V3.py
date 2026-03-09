@@ -526,9 +526,7 @@ def main():
     print('  - HTML 보고서 생성 중...')
     html = generate_html_report(sections, issues=issues)
 
-    today = datetime.now()
-    week_num = today.isocalendar()[1]
-    filename = f'주간금리동향_{today.strftime("%Y%m%d")}.html'
+    filename = 'index.html'
     output_path = os.path.join(OUTPUT_DIR, filename)
 
     with open(output_path, 'w', encoding='utf-8') as f:
